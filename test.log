@@ -1,0 +1,2944 @@
+DEBUG:paramiko.transport:starting thread (client mode): 0xc7e0b160
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: w
+DEBUG:netmiko:read_channel: id
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 5
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:read_channel: 1
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l le
+DEBUG:netmiko:read_channel: ng
+DEBUG:netmiko:read_channel: th 
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: ([>#]) 
+rtr>
+DEBUG:netmiko:write_channel: b'configure terminal\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: co
+DEBUG:netmiko:read_channel: nf
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: gur
+DEBUG:netmiko:read_channel: e 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: in
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:Pattern found: (configure\ terminal) configure terminal
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel:        ^
+% Invalid input detected at '^' marker.
+
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+       ^
+% Invalid input detected at '^' marker.
+
+rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: ([>#]) 
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x7339b1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>te
+DEBUG:netmiko:read_channel: rmi
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel:  w
+DEBUG:netmiko:read_channel: id
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 5
+DEBUG:netmiko:read_channel: 11
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: er
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:read_channel: ng
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ena
+DEBUG:netmiko:read_channel: ble
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x4197b1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: rm
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: al 
+DEBUG:netmiko:read_channel: wid
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 51
+DEBUG:netmiko:read_channel: 1
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: nal
+DEBUG:netmiko:read_channel:  le
+DEBUG:netmiko:read_channel: ngt
+DEBUG:netmiko:read_channel: h 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: nabl
+DEBUG:netmiko:read_channel: e
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x285b1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>t
+DEBUG:netmiko:read_channel: ermi
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  wi
+DEBUG:netmiko:read_channel: d
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 51
+DEBUG:netmiko:read_channel: 1
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: erm
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: nal
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: eng
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: ab
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x446bb1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>te
+DEBUG:netmiko:read_channel: rmin
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: al 
+DEBUG:netmiko:read_channel: wid
+DEBUG:netmiko:read_channel: th 
+DEBUG:netmiko:read_channel: 5
+DEBUG:netmiko:read_channel: 11
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: ter
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:read_channel: ngth
+DEBUG:netmiko:read_channel:  0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: b
+DEBUG:netmiko:read_channel: le
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x25fbb1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  w
+DEBUG:netmiko:read_channel: idt
+DEBUG:netmiko:read_channel: h 51
+DEBUG:netmiko:read_channel: 1
+rtr>
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: ermi
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l l
+DEBUG:netmiko:read_channel: engt
+DEBUG:netmiko:read_channel: h 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: b
+DEBUG:netmiko:read_channel: le
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x4390b1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>t
+DEBUG:netmiko:read_channel: erm
+DEBUG:netmiko:read_channel: in
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  w
+DEBUG:netmiko:read_channel: idth
+DEBUG:netmiko:read_channel:  5
+DEBUG:netmiko:read_channel: 11
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: rmi
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:read_channel: ng
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: ble
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+% No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xa6fdb1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: ermin
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: wid
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h 5
+DEBUG:netmiko:read_channel: 11
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>te
+DEBUG:netmiko:read_channel: rmin
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: eng
+DEBUG:netmiko:read_channel: th 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ena
+DEBUG:netmiko:read_channel: ble
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ci
+DEBUG:netmiko:read_channel: sco
+DEBUG:netmiko:read_channel: 
+Translating "********"...domain server (192.168.85.2)
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel:  (192.168.85.2)
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+Translating "********"...domain server (192.168.85.2)
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********
+Translating "********"...domain server (192.168.85.2)
+ (192.168.85.2)
+Translating "********"...domain server (192.168.85.2)
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xecf6b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: w
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: d
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h
+DEBUG:netmiko:read_channel:  5
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ab
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:Pattern found: (enable) 
+rtr>enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: s
+DEBUG:netmiko:read_channel: co
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: o
+DEBUG:netmiko:read_channel: b
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l_
+DEBUG:netmiko:read_channel: d
+DEBUG:netmiko:read_channel: el
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: y_
+DEBUG:netmiko:read_channel: fa
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: to
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: r=
+DEBUG:netmiko:read_channel: 2
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x5736b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel:  w
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: d
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 5
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: gt
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: b
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: s
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: o
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: o
+DEBUG:netmiko:read_channel: b
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: _d
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: y
+DEBUG:netmiko:read_channel: _f
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: to
+DEBUG:netmiko:read_channel: r=
+DEBUG:netmiko:read_channel: 2
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x8a8eb1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: rmina
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: widt
+DEBUG:netmiko:read_channel: h 51
+DEBUG:netmiko:read_channel: 1
+
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: mi
+DEBUG:netmiko:read_channel: nal 
+DEBUG:netmiko:read_channel: leng
+DEBUG:netmiko:read_channel: th 
+DEBUG:netmiko:read_channel: 0
+rtr>
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: able
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ci
+DEBUG:netmiko:read_channel: sco
+DEBUG:netmiko:read_channel: gl
+DEBUG:netmiko:read_channel: obal
+DEBUG:netmiko:read_channel: _de
+DEBUG:netmiko:read_channel: lay
+DEBUG:netmiko:read_channel: _fac
+DEBUG:netmiko:read_channel: tor=
+DEBUG:netmiko:read_channel: 2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x9b71b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>te
+DEBUG:netmiko:read_channel: rmin
+DEBUG:netmiko:read_channel: al w
+DEBUG:netmiko:read_channel: idth
+DEBUG:netmiko:read_channel:  511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>te
+DEBUG:netmiko:read_channel: rm
+DEBUG:netmiko:read_channel: in
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: ng
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: enab
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: e
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: ci
+DEBUG:netmiko:read_channel: scog
+DEBUG:netmiko:read_channel: lo
+DEBUG:netmiko:read_channel: ba
+DEBUG:netmiko:read_channel: l_
+DEBUG:netmiko:read_channel: del
+DEBUG:netmiko:read_channel: ay_
+DEBUG:netmiko:read_channel: fac
+DEBUG:netmiko:read_channel: to
+DEBUG:netmiko:read_channel: r=
+DEBUG:netmiko:read_channel: 2
+
+DEBUG:netmiko:read_channel: The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xa100b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>t
+DEBUG:netmiko:read_channel: erm
+DEBUG:netmiko:read_channel: ina
+DEBUG:netmiko:read_channel: l w
+DEBUG:netmiko:read_channel: idth
+DEBUG:netmiko:read_channel:  
+DEBUG:netmiko:read_channel: 51
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: r
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: in
+DEBUG:netmiko:read_channel: a
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: th 0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: ble
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+% No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: is
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: og
+DEBUG:netmiko:read_channel: lob
+DEBUG:netmiko:read_channel: al_
+DEBUG:netmiko:read_channel: del
+DEBUG:netmiko:read_channel: ay
+DEBUG:netmiko:read_channel: _fa
+DEBUG:netmiko:read_channel: cto
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: r=
+DEBUG:netmiko:read_channel: 2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x4f61b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>ter
+DEBUG:netmiko:read_channel: mina
+DEBUG:netmiko:read_channel: l w
+DEBUG:netmiko:read_channel: id
+DEBUG:netmiko:read_channel: th 
+DEBUG:netmiko:read_channel: 511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:read_channel: term
+DEBUG:netmiko:read_channel: inal
+DEBUG:netmiko:read_channel:  le
+DEBUG:netmiko:read_channel: ngt
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: ab
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********global_delay_factor=2\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: c
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: isc
+DEBUG:netmiko:read_channel: oglo
+DEBUG:netmiko:read_channel: bal
+DEBUG:netmiko:read_channel: _d
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: lay
+DEBUG:netmiko:read_channel: _f
+DEBUG:netmiko:read_channel: ac
+DEBUG:netmiko:read_channel: tor
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: =2
+DEBUG:netmiko:read_channel: 
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+
+DEBUG:netmiko:Pattern found: (rtr.*) >********global_delay_factor=2
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xe88bb1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xcea9b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>te
+DEBUG:netmiko:read_channel: rm
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: na
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: l 
+DEBUG:netmiko:read_channel: w
+DEBUG:netmiko:read_channel: id
+DEBUG:netmiko:read_channel: th
+DEBUG:netmiko:read_channel:  5
+DEBUG:netmiko:read_channel: 11
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>t
+DEBUG:netmiko:read_channel: ermi
+DEBUG:netmiko:read_channel: nal
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: gt
+DEBUG:netmiko:read_channel: h
+DEBUG:netmiko:read_channel:  0
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: able
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+% No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 0
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: lo
+DEBUG:netmiko:read_channel: ba
+DEBUG:netmiko:read_channel: l_d
+DEBUG:netmiko:read_channel: elay_
+DEBUG:netmiko:read_channel: f
+DEBUG:netmiko:read_channel: ac
+DEBUG:netmiko:read_channel: tor
+DEBUG:netmiko:read_channel: =2
+
+DEBUG:netmiko:read_channel: The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********
+The command you have entered is available in the IOS.sh.
+However, the shell is currently disabled. You can enable
+it on this terminal by typing
+   'term shell'
+You can also enable it for all terminals by configuring the
+   'shell processing full'
+command. There is additional information in the man command.
+For more information, enable shell, and then enter:
+'man IOS.sh'
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xcf3eb1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: ter
+DEBUG:netmiko:read_channel: min
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel:  wi
+DEBUG:netmiko:read_channel: dth
+DEBUG:netmiko:read_channel:  511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: ter
+DEBUG:netmiko:read_channel: m
+DEBUG:netmiko:read_channel: in
+DEBUG:netmiko:read_channel: al
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel:  l
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: g
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: ab
+DEBUG:netmiko:read_channel: le
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x2b80b2e0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0xa290b1c0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'82dcc0fefc1c1b7639fc7c4fdcbdf101'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: ter
+DEBUG:netmiko:read_channel: min
+DEBUG:netmiko:read_channel: al 
+DEBUG:netmiko:read_channel: widt
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 511
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:read_channel: te
+DEBUG:netmiko:read_channel: rmi
+DEBUG:netmiko:read_channel: nal 
+DEBUG:netmiko:read_channel: len
+DEBUG:netmiko:read_channel: gth
+DEBUG:netmiko:read_channel:  0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: ab
+DEBUG:netmiko:read_channel: l
+DEBUG:netmiko:read_channel: e
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x3aefb1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'82dcc0fefc1c1b7639fc7c4fdcbdf101'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) successful!
+DEBUG:paramiko.transport:[chan 0] Max packet in: 32768 bytes
+DEBUG:paramiko.transport:[chan 0] Max packet out: 4096 bytes
+DEBUG:paramiko.transport:Secsh channel 0 opened.
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:paramiko.transport:[chan 0] Sesch channel 0 request ok
+DEBUG:netmiko:write_channel: b'terminal width 511\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: rm
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: n
+DEBUG:netmiko:read_channel: al w
+DEBUG:netmiko:read_channel: id
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 51
+DEBUG:netmiko:read_channel: 1
+rtr>
+DEBUG:netmiko:Pattern found: (terminal width 511) 
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************
+rtr>terminal width 511
+DEBUG:netmiko:In disable_paging
+DEBUG:netmiko:Command: terminal length 0
+
+DEBUG:netmiko:write_channel: b'terminal length 0\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: e
+DEBUG:netmiko:read_channel: rm
+DEBUG:netmiko:read_channel: i
+DEBUG:netmiko:read_channel: nal
+DEBUG:netmiko:read_channel:  le
+DEBUG:netmiko:read_channel: ng
+DEBUG:netmiko:read_channel: t
+DEBUG:netmiko:read_channel: h 
+DEBUG:netmiko:read_channel: 0
+
+DEBUG:netmiko:Pattern found: (terminal\ length\ 0) 
+rtr>terminal length 0
+DEBUG:netmiko:
+rtr>terminal length 0
+DEBUG:netmiko:Exiting disable_paging
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Clear buffer detects data in the channel
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+rtr>
+DEBUG:netmiko:Pattern found: (\#|>) 
+rtr>
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:[find_prompt()]: prompt is rtr>
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+
+DEBUG:netmiko:read_channel: rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) 
+rtr>
+DEBUG:netmiko:write_channel: b'enable\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: en
+DEBUG:netmiko:read_channel: abl
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: e
+
+DEBUG:netmiko:Pattern found: (enable) enable
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: % No password set
+rtr>
+DEBUG:netmiko:Pattern found: ((?:rtr|ssword)) 
+% No password
+DEBUG:netmiko:write_channel: b'********\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:Pattern found: (rtr)  set
+rtr
+DEBUG:netmiko:write_channel: b'\n'
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: 1
+DEBUG:netmiko:read_channel: 23
+
+DEBUG:netmiko:read_channel: 
+DEBUG:netmiko:read_channel: Trying ********...
+% Destination unreachable; gateway or host down
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+rtr>
+DEBUG:netmiko:Pattern found: (rtr.*) >********
+Trying ********...
+% Destination unreachable; gateway or host down
+
+% Bad IP address or host name
+% Unknown command or computer name, or unable to find computer address
+rtr>
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x74b0b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x456db1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x1892b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:EOF in transport thread
+DEBUG:paramiko.transport:starting thread (client mode): 0x72b2b1f0
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.11.0
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-Cisco-1.25
+INFO:paramiko.transport:Connected (version 2.0, client Cisco-1.25)
+DEBUG:paramiko.transport:=== Key exchange possibilities ===
+DEBUG:paramiko.transport:kex algos: diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
+DEBUG:paramiko.transport:server key: ssh-rsa
+DEBUG:paramiko.transport:client encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:server encrypt: aes128-ctr, aes192-ctr, aes256-ctr
+DEBUG:paramiko.transport:client mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:server mac: hmac-sha2-256, hmac-sha2-512, hmac-sha1, hmac-sha1-96
+DEBUG:paramiko.transport:client compress: none
+DEBUG:paramiko.transport:server compress: none
+DEBUG:paramiko.transport:client lang: <none>
+DEBUG:paramiko.transport:server lang: <none>
+DEBUG:paramiko.transport:kex follows: False
+DEBUG:paramiko.transport:=== Key exchange agreements ===
+DEBUG:paramiko.transport:Kex: diffie-hellman-group-exchange-sha1
+DEBUG:paramiko.transport:HostKey: ssh-rsa
+DEBUG:paramiko.transport:Cipher: aes128-ctr
+DEBUG:paramiko.transport:MAC: hmac-sha2-256
+DEBUG:paramiko.transport:Compression: none
+DEBUG:paramiko.transport:=== End of kex handshake ===
+DEBUG:paramiko.transport:Got server p (2048 bits)
+DEBUG:paramiko.transport:kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+DEBUG:paramiko.transport:Switch to new keys ...
+DEBUG:paramiko.transport:Adding ssh-rsa host key for 192.168.85.129: b'd3bb14c80724ad486c9895a8c282ba98'
+DEBUG:paramiko.transport:userauth is OK
+INFO:paramiko.transport:Auth banner: b"\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************"
+INFO:paramiko.transport:Authentication (password) failed.
+DEBUG:paramiko.transport:EOF in transport thread

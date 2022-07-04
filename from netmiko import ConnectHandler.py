@@ -2,13 +2,14 @@ from netmiko import ConnectHandler
 
 Switch = {
     'device_type': 'cisco_ios',
-    'ip': '192.168.85.130',
+    'ip': '192.168.85.135',
     'username': 'cisco',
     'password': 'cisco'
 }
 
 net_connect = ConnectHandler(**Switch)
 output = net_connect.send_command('show ip int brief')
+net_connect.enable()
 print (output)
 
 config_commands = ['int loop 0', 'ip address 1.1.1.1 255.255.255.0']
