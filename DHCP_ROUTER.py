@@ -14,9 +14,9 @@ def read_yaml(yaml_file):
 def device_connection(router_ip):
 	device = {
 		'device_type' : 'cisco_ios',
-		'ip' : router_ip,
+		'ip' : '192.168.85.140',
 	    'username': 'cisco',
-		'password': '123'
+		'password': 'cisco'
 }
 
 	conn = ConnectHandler(**device)
